@@ -15,7 +15,8 @@ const app = Vue.createApp({
             o_button: null,
             m_button: null,
             s_button: null,
-            results_max_age:null
+            results_max_age:null,
+            lang : null ,
             
 
         }
@@ -51,30 +52,59 @@ const app = Vue.createApp({
     },
     // super important. Outside of data and methods and computed, you can access the lifehooks like this. 
     mounted(){
-        if(document.getElementById('ob_b').textContent == 'on') {
-            this.o_button = '<p class="result-text unchecked"> Obese men: excluded</p>'
+        this.lang = document.getElementById('lang').textContent
+
+        if(document.getElementById('ob_b')){
+
+            if(this.lang =='eng'){
+                if(document.getElementById('ob_b').textContent == 'on') {
+                    this.o_button = '<p class="result-text unchecked"> Obese men: excluded</p>'
+                }
+                else{
+                    this.o_button = '<p class="result-text "> Obese men : included</p>'
+                };
+
+                if(document.getElementById('mar_b').textContent == 'on') {
+                    this.m_button = '<p class="result-text unchecked"> Married : excluded</p>'
+                }
+                else{
+                    this.m_button = '<p class="result-text "> Married men: included</p>'
+                };
+
+                // some reason the button's 'on' has some extra space but the others do not
+                if(document.getElementById('sm_b').textContent.trim() == 'on') {
+                    this.s_button = '<p class="result-text unchecked"> Smoking men: excluded</p>'
+                }
+                else{
+                    this.s_button = '<p class="result-text "> Smoking men: included</p>'
+                };
+            }
+            else if (this.lang == 'jap'){
+                if(document.getElementById('ob_b').textContent == 'on') {
+                    this.o_button = '<p class="result-text unchecked"> 肥満者: 抜き</p>'
+                }
+                else{
+                    this.o_button = '<p class="result-text "> 肥満者 : 入り</p>'
+                };
+                if(document.getElementById('mar_b').textContent == 'on') {
+                    this.m_button = '<p class="result-text unchecked"> 未結婚 : 抜き</p>'
+                }
+                else{
+                    this.m_button = '<p class="result-text "> 未結婚: 入り</p>'
+                };
+                // some reason the button's 'on' has some extra space but the others do not
+                if(document.getElementById('sm_b').textContent.trim() == 'on') {
+                    this.s_button = '<p class="result-text unchecked"> 喫煙習慣者: 抜き</p>'
+                }
+                else{
+                    this.s_button = '<p class="result-text "> 喫煙習慣者: 入り</p>'
+                };
+            
+            }
         }
-        else{
-            this.o_button = '<p class="result-text "> Obese men : included</p>'
-        };
-
-        if(document.getElementById('mar_b').textContent == 'on') {
-            this.m_button = '<p class="result-text unchecked"> Married : excluded</p>'
-        }
-        else{
-            this.m_button = '<p class="result-text "> Married men: included</p>'
-
-        };
-
-        // some reason the button's 'on' has some extra space but the others do not
-        if(document.getElementById('sm_b').textContent.trim() == 'on') {
-            this.s_button = '<p class="result-text unchecked"> Smoking men: excluded</p>'
-        }
-        else{
-            this.s_button = '<p class="result-text "> Smoking men: included</p>'
-        };
-
+    
     }
+    // end of mounted block
 })
 
 app.config.compilerOptions.delimiters = ['$[', ']'];

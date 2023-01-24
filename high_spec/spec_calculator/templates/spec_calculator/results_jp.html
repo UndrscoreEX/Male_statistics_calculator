@@ -1,4 +1,4 @@
-{% extends 'base_en.html' %}
+{% extends 'base_jp.html' %}
 
 {% block title %} Results {% endblock title %}
 
@@ -10,16 +10,16 @@
             <p id="mar_b">{{ results.n_married }}</p>
         </div>
         
-        <h1 class="heading my-5 mx-auto flex w-75" id="header">Your Bachelor results:</h1>
+        <h1 class="heading my-5 mx-auto flex w-75" id="header">成績</h1>
         
 
     <div class="container w-50 card card-inner  py-3">
         <div class="border-left w-50 mx-auto">
-            <h2 class="sub-heading border-bottom mb-3">Chosen conditions</h2>
-            <p class="result-text">  Mininum Age: {{ results.min_age }}</p>
-            <p class="result-text" > Maximum Age: {{ results.max_age |add:'1' }} </span></p>
-            <p class="result-text"> Minimum Income: {{ results.income }}</p>
-            <p class="result-text"> Minium Height: {{ results.height}}</p>
+            <h2 class="sub-heading border-bottom mb-3">選んだ項目</h2>
+            <p class="result-text"> 年齢: {{ results.min_age }} 歳から</p>
+            <p class="result-text"> 年齢: {{ results.max_age |add:'1' }} 歳まで </span></p>
+            <p class="result-text"> 年収: {{ results.income }}万円以上</p>
+            <p class="result-text"> 身長: {{ results.height}}cm 以上</p>
             <div v-html="o_button"></div>
             <div v-html="m_button"></div>
             <div v-html="s_button"></div>
@@ -27,13 +27,13 @@
     </div>
     
     <div class="container w-50 card card-inner text-center py-5">
-        <p class="result-text-final-sub">According to stastical data, the amount of men between <b> {{ results.min_age }} </b> and <b>{{ results.max_age |add:'1' }}</b> that meet your standards in Japan is:</p>
+        <p class="result-text-final-sub">参考の分析によると、希望の条件に添える<b>{{ results.min_age }}</b>歳から<b>{{ results.max_age |add:'1' }}</b>歳までの男の人の人数は:</p>
         <p class="result-text-final" id="final-per">{{ results.final }}%</p>
     </div>
 
     <div class="container w-50">
         <div class="text-center row">    
-                 <a class="btn btn-dark button-text text-decoration-none result-text" role='button' href="{% url 'index_eng' %}">Try again</a>
+                 <a class="btn btn-dark button-text text-decoration-none result-text" role='button' href="{% url 'index_jp' %}">計算ページへ</a>
         </div>
     </div>
     

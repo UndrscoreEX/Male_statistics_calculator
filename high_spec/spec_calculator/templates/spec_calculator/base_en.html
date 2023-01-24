@@ -12,18 +12,23 @@
 </head>
 <body>
     <div id="app">
-        <nav class="d-flex justify-content-end sticky-top">
+        <nav class="d-flex justify-content-end sticky-top lang-text sub-heading">
             <div>
-        <span class="lang-text sub-heading">
-            <a class="text-decoration-none" href="/spec/">ENG</a> /
-            <a class="text-decoration-none" href="/spec/jp/">JPN</a>
-        </span>            
-                <!-- <a></a>
-                <a></a> -->
-    
-        </div>
+                <a class="" href="{% url 'index_eng' %}">ENG</a> /
+                <a class="text-decoration-none" href="{% url 'index_jp' %}">JPN</a>
+            </div>
         </nav>
+        <div id="lang" class="d-none">eng</div>
+
         {% block content %} {% endblock content %}
+        <hr>
+        <nav class="d-flex  lang-text sub-heading border-top container flex w-50">
+            <div class="mx-auto">
+                <a class="text-decoration-none" href="{% url 'stats_eng' %}">Stats</a> |
+                <a class="text-decoration-none" href="{% url 'index_eng' %}">Overview (TBC)</a>
+            </div>
+        </nav>
+        
     </div>
       
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

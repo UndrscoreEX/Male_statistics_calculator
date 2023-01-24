@@ -1,4 +1,4 @@
-{% extends 'base.html'  %}
+{% extends 'base_en.html'  %}
 
     {% block title %}Japanese Bachelor Calculator {% endblock title %}
 
@@ -6,7 +6,7 @@
         <h1 class="heading my-5 mx-auto flex w-75">$[ head ]</h1>
         <div class="container mt-5 mx-auto flex w-50">
             
-        <form action="{% url 'conclusion' %}" method="POST" @submit="checkForm">
+        <form action="{% url 'conclusion_eng' %}" method="POST" @submit="checkForm">
             {% csrf_token %}
             <div class="card card-inner">
                 
@@ -86,6 +86,7 @@
                                     Please adjust the selected minimum and maximum age 
                                 </p>
                 </div>
+            </div>
 
             
         </form>
