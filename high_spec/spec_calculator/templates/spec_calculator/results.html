@@ -19,7 +19,7 @@
             <p class="result-text">  Mininum Age: {{ results.min_age }}</p>
             <p class="result-text" > Maximum Age: {{ results.max_age |add:'1' }} </span></p>
             <p class="result-text"> Minimum Income: {{ results.income }}</p>
-            <p class="result-text"> Minium Height: {{ results.height}}</p>
+            <p class="result-text"> Minium Height: {{ results.height |add:'1'}}</p>
             <div v-html="o_button"></div>
             <div v-html="m_button"></div>
             <div v-html="s_button"></div>

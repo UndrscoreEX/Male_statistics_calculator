@@ -19,7 +19,7 @@
             <p class="result-text"> 年齢: {{ results.min_age }} 歳から</p>
             <p class="result-text"> 年齢: {{ results.max_age |add:'1' }} 歳まで </span></p>
             <p class="result-text"> 年収: {{ results.income }}万円以上</p>
-            <p class="result-text"> 身長: {{ results.height}}cm 以上</p>
+            <p class="result-text"> 身長: {{ results.height |add:'1'}}cm 以上</p>
             <div v-html="o_button"></div>
             <div v-html="m_button"></div>
             <div v-html="s_button"></div>
