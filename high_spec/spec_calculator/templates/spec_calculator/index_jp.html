@@ -14,8 +14,8 @@
 
                         <!-- Min age -->
                         <div class=" col-md-6 text-center ">
-                            <p class="card-inner-text" v-if="min_age_val"> 年齢: $[min_age_val]から</p>
-                            <p class="card-inner-text" v-else> 年齢: 20から </p>
+                            <p class="card-inner-text" v-if="min_age_val"> 年齢: $[min_age_val]歳から</p>
+                            <p class="card-inner-text" v-else> 年齢: 20歳から </p>
                             <div class="p-2 fluid">
                                 <div :class="{ error : age_error}">
                                     <input style="width: 90%;" class=" " type="range" min="20" max="70"  name="mn_age_value"  step='5' v-model="min_age_val" @click="age_error_check"  >
@@ -25,8 +25,8 @@
             
                         <!-- Max age -->
                         <div class="col-md-6 text-center" >
-                            <p class="card-inner-text" v-if="max_age_val"> 年齢: $[max_age_val]まで</p>
-                            <p class="card-inner-text" v-else> 年収: 0+ </p>
+                            <p class="card-inner-text" v-if="max_age_val"> 年齢: $[max_age_val]歳まで</p>
+                            <p class="card-inner-text" v-else> 年齢: 70歳まで </p>
                             <div class="p-2">
                                 <div :class="{ error : age_error}">
                                     <input style="width: 90%;" class="" type="range" min="20" max="70" name="mx_age_value"  step='5' v-model="max_age_val" @click="age_error_check">
