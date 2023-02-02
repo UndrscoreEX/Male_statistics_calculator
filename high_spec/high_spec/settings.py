@@ -78,6 +78,19 @@ WSGI_APPLICATION = 'high_spec.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         # 'NAME': BASE_DIR / 'db.sqlite3',
+#         'NAME': 'high_spec',
+#         "USER": os.environ['db_us'],
+#         'PASSWORD': os.environ['db_pw'],
+#         'HOSTNAME' : os.environ['db_hn'],
+#         "PORT" : 3306
+#     }
+# }
+
+# Default SQLLITE db config
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -120,15 +133,19 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+
+# the url that it shows the files being served from i.e url.com/static/~~
 STATIC_URL = '/static/'
 
-# STATIC_ROOT = os.path.join(BASE_DIR,'spec_calculator/app/static/')
-# STATICFILES_DIR = [
-#     BASE_DIR / '/spec_calculator/app/static',
-    # os.path.join(BASE_DIR,'spec_calculator/app/static')
+print(BASE_DIR)
 
-    
-# ]
+# used for production. creating a location to serve files from.
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+STATICFILES_DIR = [
+    BASE_DIR / 'static',
+    # os.path.join(BASE_DIR,'spec_calculator/app/static')
+]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 

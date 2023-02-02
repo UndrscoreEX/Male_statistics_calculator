@@ -1,0 +1,91 @@
+/* Main Colors */
+body {
+    background-color: #293462;
+    /* background-color: #3c4466; */
+
+}
+/* Secondary Color */
+.card-inner {
+    background-color: #D61C4E; 
+    border: solid 1px #e4a1b3;
+    
+    /* border: solid 1px #df7390;
+    background-color: #df466f; */
+
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+.third-text {
+    color: #EFF5F5;
+}
+.card-inner-text {
+    color: #EFF5F5;
+    font-size: 2rem;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+.big-label {
+    color: #EFF5F5;
+    font-size: 2rem;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+.sml-label {
+    color: #EFF5F5;
+    font-size: 1.3rem;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+.heading {
+    /* color: #FCF9BE; */
+    color: #FCF9BE;
+    font-size: 4rem;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.result-text {
+    color: #EFF5F5;
+    margin-top: -0.05rem;
+    margin-bottom: -0.05rem;
+    font-size: 1.5rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.error  {
+    border:  2px solid ;
+    border-color: #ff868e;
+}
+.err{
+    color: #ff868e;
+}
+
+.button-text {
+    font-size: 1.5rem;
+}
+
+.result-text-final {
+    color: #EFF5F5;
+    font-size: 3rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.result-text-final-sub{
+    color: #EFF5F5;
+    font-size: 1rem;
+    font-family: Arial, Helvetica,;
+}
+
+.unchecked{
+    color: rgb(171, 171, 171);
+}
+
+.sub-heading{
+    color: #FCF9BE;
+}
+
+.lang-text a {
+    color: #FCF9BE;
+}
+
+
