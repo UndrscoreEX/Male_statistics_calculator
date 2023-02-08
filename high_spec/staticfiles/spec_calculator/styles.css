@@ -88,4 +88,9 @@ body {
     color: #FCF9BE;
 }
 
+@media only screen and (max-width: 600px) {
 
+    .expand-mobile {
+        width: 75% !important;
+    }
+}

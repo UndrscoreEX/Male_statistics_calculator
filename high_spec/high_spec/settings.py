@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ['SECRET_KEY_DJ']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['bach.underscoreex','www.bach.underscoreex','bach.underscoreex.com','www.bach.underscoreex.com']
+ALLOWED_HOSTS = ['localhost','bach.underscoreex','www.bach.underscoreex','bach.underscoreex.com','www.bach.underscoreex.com']
 
 
 # Application definition
@@ -137,7 +137,6 @@ USE_TZ = True
 # the url that it shows the files being served from i.e url.com/static/~~
 STATIC_URL = '/static/'
 
-print(BASE_DIR)
 
 # used for production. creating a location to serve files from.
 STATIC_ROOT = BASE_DIR / 'staticfiles'
