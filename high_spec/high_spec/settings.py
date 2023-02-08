@@ -27,7 +27,11 @@ SECRET_KEY = os.environ['SECRET_KEY_DJ']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','bach.underscoreex','www.bach.underscoreex','bach.underscoreex.com','www.bach.underscoreex.com']
+<<<<<<< HEAD
+ALLOWED_HOSTS = ['18.176.194.245','bach.underscoreex','www.bach.underscoreex','bach.underscoreex.com','www.bach.underscoreex.com']
+=======
+ALLOWED_HOSTS = ['18.176.194.245','bach.underscoreex','www.bach.underscoreex','bach.underscoreex.com','www.bach.underscoreex.com']
+>>>>>>> 21191e38c328b48b5cbf5d0d5c04542294fed8fc
 
 
 # Application definition
@@ -137,9 +141,14 @@ USE_TZ = True
 # the url that it shows the files being served from i.e url.com/static/~~
 STATIC_URL = '/static/'
 
+<<<<<<< HEAD
+=======
+print('static url: ',STATIC_URL)
+>>>>>>> 21191e38c328b48b5cbf5d0d5c04542294fed8fc
 
 # used for production. creating a location to serve files from.
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = str(BASE_DIR / 'staticfiles')
+print('prod server static route is: ', STATIC_ROOT)
 
 STATICFILES_DIR = [
     BASE_DIR / 'static',
