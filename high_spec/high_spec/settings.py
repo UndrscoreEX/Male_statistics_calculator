@@ -25,13 +25,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ['SECRET_KEY_DJ']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ALLOWED_HOSTS = ['18.176.194.245','bach.underscoreex','www.bach.underscoreex','bach.underscoreex.com','www.bach.underscoreex.com']
 =======
 ALLOWED_HOSTS = ['18.176.194.245','bach.underscoreex','www.bach.underscoreex','bach.underscoreex.com','www.bach.underscoreex.com']
 >>>>>>> 21191e38c328b48b5cbf5d0d5c04542294fed8fc
+=======
+ALLOWED_HOSTS = ['bach.underscoreex','www.bach.underscoreex','bach.underscoreex.com','www.bach.underscoreex.com']
+>>>>>>> parent of 9385a6f... works better on mobile now
 
 
 # Application definition
@@ -142,9 +146,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 print('static url: ',STATIC_URL)
 >>>>>>> 21191e38c328b48b5cbf5d0d5c04542294fed8fc
+=======
+print(BASE_DIR)
+>>>>>>> parent of 9385a6f... works better on mobile now
 
 # used for production. creating a location to serve files from.
 STATIC_ROOT = str(BASE_DIR / 'staticfiles')

@@ -13,8 +13,8 @@
         <h1 class="heading my-5 mx-auto flex w-75" id="header">Your Bachelor results:</h1>
         
 
-    <div class="container w-50 card card-inner py-3 expand-mobile">
-        <div class="border-left w-50 mx-auto expand-mobile">
+    <div class="container w-50 card card-inner  py-3">
+        <div class="border-left w-50 mx-auto">
             <h2 class="sub-heading border-bottom mb-3">Chosen conditions</h2>
             <p class="result-text">  Mininum Age: {{ results.min_age }}</p>
             <p class="result-text" > Maximum Age: {{ results.max_age |add:'1' }} </span></p>
@@ -26,12 +26,12 @@
         </div>
     </div>
     
-    <div class="container w-50 card card-inner text-center py-5 expand-mobile">
+    <div class="container w-50 card card-inner text-center py-5">
         <p class="result-text-final-sub">According to stastical data, the amount of men between <b> {{ results.min_age }} </b> and <b>{{ results.max_age |add:'1' }}</b> that meet your standards in Japan is:</p>
         <p class="result-text-final" id="final-per">{{ results.final }}%</p>
     </div>
 
-    <div class="container w-50 expand-mobile">
+    <div class="container w-50">
         <div class="text-center row">    
                  <a class="btn btn-dark button-text text-decoration-none result-text" role='button' href="{% url 'index_eng' %}">Try again</a>
         </div>
