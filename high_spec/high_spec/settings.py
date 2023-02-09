@@ -27,15 +27,7 @@ SECRET_KEY = os.environ['SECRET_KEY_DJ']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ALLOWED_HOSTS = ['18.176.194.245','bach.underscoreex','www.bach.underscoreex','bach.underscoreex.com','www.bach.underscoreex.com']
-=======
-ALLOWED_HOSTS = ['18.176.194.245','bach.underscoreex','www.bach.underscoreex','bach.underscoreex.com','www.bach.underscoreex.com']
->>>>>>> 21191e38c328b48b5cbf5d0d5c04542294fed8fc
-=======
-ALLOWED_HOSTS = ['bach.underscoreex','www.bach.underscoreex','bach.underscoreex.com','www.bach.underscoreex.com']
->>>>>>> parent of 9385a6f... works better on mobile now
 
 
 # Application definition
