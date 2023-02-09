@@ -137,14 +137,7 @@ USE_TZ = True
 # the url that it shows the files being served from i.e url.com/static/~~
 STATIC_URL = '/static/'
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-print('static url: ',STATIC_URL)
->>>>>>> 21191e38c328b48b5cbf5d0d5c04542294fed8fc
-=======
 print(BASE_DIR)
->>>>>>> parent of 9385a6f... works better on mobile now
 
 # used for production. creating a location to serve files from.
 STATIC_ROOT = str(BASE_DIR / 'staticfiles')
