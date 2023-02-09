@@ -27,7 +27,7 @@ SECRET_KEY = os.environ['SECRET_KEY_DJ']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','bach.underscoreex','www.bach.underscoreex','bach.underscoreex.com','www.bach.underscoreex.com']
+ALLOWED_HOSTS = ['18.176.194.245','bach.underscoreex','www.bach.underscoreex','bach.underscoreex.com','www.bach.underscoreex.com']
 
 
 # Application definition
