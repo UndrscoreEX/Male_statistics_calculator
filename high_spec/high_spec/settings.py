@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ['SECRET_KEY_DJ']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['localhost','bach.underscoreex','www.bach.underscoreex','bach.underscoreex.com','www.bach.underscoreex.com']
+ALLOWED_HOSTS = ['18.176.194.245','bach.underscoreex','www.bach.underscoreex','bach.underscoreex.com','www.bach.underscoreex.com']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'spec_calculator',
+    'gunicorn',
 ]
 
 MIDDLEWARE = [
