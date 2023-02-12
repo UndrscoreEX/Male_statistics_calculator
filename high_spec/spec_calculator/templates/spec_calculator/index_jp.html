@@ -4,7 +4,7 @@
 
     {% block content %}
         <h1 class="heading my-5 mx-auto flex w-75">Bachelor Calculator</h1>
-        <div class="container mt-5 mx-auto flex w-50">
+        <div class="container mt-5 mx-auto flex w-50 expand-mobile">
             
             <form action="{% url 'conclusion_jp' %}" method="POST" @submit="checkForm">
                 {% csrf_token %}
