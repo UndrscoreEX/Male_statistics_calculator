@@ -13,7 +13,7 @@
         <h1 class="heading my-5 mx-auto flex w-75" id="header">成績</h1>
         
 
-    <div class="container w-50 card card-inner  py-3 expand-mobile">
+    <div class="container w-50 card card-inner  py-3 expand-mobile love-inner">
         <div class="border-left w-50 mx-auto expand-mobile">
             <h2 class="sub-heading border-bottom mb-3">選んだ項目</h2>
             <p class="result-text"> 年齢: {{ results.min_age }} 歳から</p>
@@ -26,7 +26,7 @@
         </div>
     </div>
     
-    <div class="container w-50 card card-inner text-center py-5 expand-mobile">
+    <div class="container w-50 card card-inner text-center py-5 expand-mobile love-inner">
         <p class="result-text-final-sub">参考の分析によると、希望の条件に添える<b>{{ results.min_age }}</b>歳から<b>{{ results.max_age |add:'1' }}</b>歳までの男性人数は:</p>
         <p class="result-text-final" id="final-per">{{ results.final }}%</p>
     </div>

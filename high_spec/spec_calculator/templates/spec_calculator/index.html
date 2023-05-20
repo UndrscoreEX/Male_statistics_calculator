@@ -8,7 +8,7 @@
             
         <form action="{% url 'conclusion_eng' %}" method="POST" @submit="checkForm">
             {% csrf_token %}
-            <div class="card card-inner">
+            <div class="card card-inner love-inner">
                 
                 <div class="row g-0 my-2">
 
@@ -38,7 +38,7 @@
                 </div>
             </div>
 
-            <div class="card card-inner">
+            <div class="card card-inner love-inner">
                 <!-- @change='adjustInc' -->
                 <!-- income --> 
                 <div class="text-center my-2">
@@ -50,7 +50,7 @@
             
             <!--    Height --> 
             
-            <div class="card card-inner ">
+            <div class="card card-inner love-inner">
                 <div class="text-center my-2">
                     <p class="card-inner-text" v-if="ht_val >139"> Min Height: $[ht_val] cm +</p>
                     <p class="card-inner-text" v-else>Min  Height: Any </p>
@@ -59,7 +59,7 @@
 
             </div>
 
-            <div class="card card-inner ">
+            <div class="card card-inner love-inner">
                 <div class="text-center row my-2">
                     <!-- Obese -->
                     <div class=" col-md-4">
@@ -80,7 +80,7 @@
 
             </div>
             <div class=" ">
-                <div class="text-center row ">    
+                <div class="text-center row love-inner">    
                     <button class="text-center third-text btn btn-dark button-text " type="submit"> Let's see your chances</button>
                         <p v-if="final_error" class="text-center err">
                                     Please adjust the selected minimum and maximum age 
